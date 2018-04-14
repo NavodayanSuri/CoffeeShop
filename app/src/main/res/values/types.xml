@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Coffee_type">
+        <item>Select Coffee</item>
+        <item>Affogato</item>
+        <item>Cuppicano</item>
+        <item>Ristretto</item>
+        <item>Americano</item>
+        <item>Breve</item>
+        <item>Coffee milk</item>
+        <item>Espresso</item>
+    </string-array>
+</resources>

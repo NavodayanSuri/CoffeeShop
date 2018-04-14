@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/coffee2"
+        android:scaleType="centerCrop"
+        android:alpha=".40"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign out"
+        android:background="@drawable/gradient"
+        android:layout_alignParentRight="true"
+        android:id="@+id/out"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wake Up Cafe"
+        android:id="@+id/coffee"
+        android:textSize="50dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Enter name"
+        android:id="@+id/editname"
+        android:layout_below="@id/coffee"
+        android:focusable="true"
+        android:textColorHighlight="@color/highlight"
+        android:textColorHint="@color/hint"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:alpha=".40"
+        android:background="@drawable/edittext"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="enter phone number"
+        android:id="@+id/phone"
+        android:layout_below="@id/editname"
+        android:focusable="true"
+        android:textColorHighlight="@color/highlight"
+        android:textColorHint="@color/hint"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+       android:inputType="number"
+        android:alpha=".40"
+        android:textAlignment="center"
+        android:background="@drawable/edittext"
+        android:maxEms="11"
+        />
+
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/cofee"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:defaultFocusHighlightEnabled="true"
+        android:popupBackground="@color/bg"
+        android:background="@drawable/edittext"
+        android:alpha=".40"
+
+        >
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Number Of Cups"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/cups"
+        android:textSize="20dp"
+        android:focusable="true"
+        android:textColor="#0c2dea"
+        android:layout_marginTop="290dp"
+        />
+    <Button
+        android:id="@+id/dec"
+        android:layout_marginTop="295dp"
+        android:layout_width="30dp"
+        android:layout_height= "30dp"
+        android:layout_marginLeft="180dp"
+        android:text="-"
+        android:background="@drawable/button"
+        android:textStyle="bold"
+        android:textSize="15dp"
+
+        />
+    <TextView
+        android:id="@+id/item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="290dp"
+        android:textSize="25dp"/>
+    <Button
+        android:id="@+id/inc"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="260dp"
+        android:text="+"
+        android:textSize="15dp"
+        android:background="@drawable/button"
+        android:textStyle="bold"
+        android:layout_marginTop="295dp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cups"
+        android:text="hot"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:id="@+id/hot"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hot"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:text="cold"
+        android:id="@+id/cold"
+        />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/cold"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/hint"
+        android:background="@drawable/edittext"
+        android:alpha=".40"
+        android:hint="Table No."
+        android:focusable="true"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:inputType="number"
+        android:maxEms="2"
+        android:id="@+id/tab"
+        />
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="20dp"
+        android:id="@+id/porder"
+        android:layout_below="@id/cups"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/edittext"
+        android:text="Place Your Order"
+        android:textSize="30dp"
+        android:alpha=".80"
+        android:fontFamily="monospace"
+        android:onClick="PlaceOrderCliked"
+        android:fadeScrollbars="true"
+        />
+
+
+</RelativeLayout>
